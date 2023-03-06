@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Câu 2</title>
+    </head>
+
+    <body>
+        <script>
+            let i
+            let a = prompt("Nhập số cần tìm");
+            let arr = [1, 2, 5, 0, 4];
+            function findingNumber(number, arr) {
+                for (i = 0; i < arr.length; i++) {
+                    if (arr[i] == number) {
+                        return alert(`Số cần tìm nằm ở vị trí ${i}`)
+                    }
+                }
+                return alert('Số này không có trong mảng')
+            }
+            findingNumber(a, arr)
+        </script>
+    </body>
+
+</html>
